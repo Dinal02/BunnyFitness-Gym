@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact BunnyFitness</title>
+
+    <!-- google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background-color: rgb(37, 34, 34);
+            color: white;
+            font-family: "Lato", sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            text-align: center;
+            display: flex;
+            margin: 23px auto;
+        }
+        .contact-info {
+            width: 25%;
+        }
+        .contact-info h3 {
+            margin-bottom: 34px;
+        }
+        .contact-info h4 {
+            font-size: 18px;
+        }
+        #contact {
+            margin-top: 34px;
+            position: relative;
+        }
+        
+        #contact::before {
+            content: "";
+            position: absolute;
+            background: url('../img/contact-us.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        
+        #contact-box form {
+            width: 40%;
+        }
+        
+        #contact-box label {
+            font-size: 1.2rem;
+        }
+        
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+        button {
+            width: 100%;
+            margin: 23px 9px;
+            background-color: black;
+            color: white;
+            padding: 12px 14px;
+            border-radius: 10px;
+            font-size: 18px;
+            border: 2px solid gray;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact BunnyFitness - Get free counselling from our Trainers</h2>
+    <div class="container">
+        <div class="contact-info">
+           <h3>Email :</h3>
+           <span><i class="fa-regular fa-envelope fa-3x"></i></span>
+           <h4>abc@example.com</h4>
+        </div>
+        <div class="contact-info">
+            <h3>Phone: </h3>
+            <span><i class="fa-solid fa-phone  fa-3x"></i></span>
+            <h4>+ xx - xxx - xxx</h4>
+        </div>
+        <div class="contact-info">
+            <h3>Facebook: </h3> 
+            <span><i class="fa-brands fa-facebook fa-3x"></i></span>
+            <h4>facebook@BunnyFitness</h4>
+        </div>
+        <div class="contact-info">
+            <h3>Instagram: </h3>
+            <span><i class="fa-brands fa-instagram fa-3x"></i></span>
+            <h4>instagram@BunnyFitness</h4>
+        </div>
+    </div>
+    <section id="contact">
+        <div id="contact-box">
+            <form action="">
+                <h2>For Inquiry</h2>
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No.: </label>
+                    <input type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10">Enter Your Message: </textarea>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: url("../img/gym-img.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 60px;
+  top: 20px;
+}
+.left img {
+  width: 88px;
+  filter: invert(100%);
+}
+.left div {
+  text-align: center;
+  line-height: 19px;
+  font-size: 20px;
+}
+.mid {
+  display: block;
+  width: 36%;
+  margin: 29px auto;
+}
+.right {
+  position: absolute;
+  right: 34px;
+  top: 43px;
+  display: inline-block;
+}
+.right a {
+  margin: 0px auto;
+  background-color: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 2px solid gray;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar {
+  display: inline-block;
+}
+.navbar li {
+  display: inline-block;
+  font-size: 18px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 18px 12px;
+}
+.navbar li a:hover,
+navbar li a.active {
+  text-decoration: underline;
+  color: gray;
+}
+.btn {
+  margin: 0px 9px;
+  background-color: black;
+  color: white;
+  padding: 4px 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 2px solid gray;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: gray;
+}
+.container {
+  float: right;
+  border: 2px solid white;
+  margin: 80px;
+  padding: 75px;
+  width: 33%;
+  border-radius: 28px;
+}
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 500px;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 11px auto;
+}
+.container h1 {
+  text-align: center;
+}
+.container h3 {
+  text-align: center;
+  margin: 34px 0;
+  font-size: 22px;
+}
+.container p {
+  text-align: center;
+  font-size: 18px;
+}
+.container a {
+  margin: 34px 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 2px solid gray;
+  cursor: pointer;
+  text-decoration: none;
+}
